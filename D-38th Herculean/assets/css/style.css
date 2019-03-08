@@ -1,0 +1,26 @@
+footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background: white;
+}
+
+footer p {
+    margin-bottom: .25rem;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color:#414171;
+    color:white;
+    cursor: pointer;
+    height:50px;
+    width:50px;
+    border-radius: 25px;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="images/logo.PNG">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <title>CSE D-38 theHerculean</title>
+
+</head>
+
+<body style="background:#f7f7f7;">
+
+    <div class="container ">
+        <div class="row  animated bounceIn justify-content-center">
+            <div class="col-6 mt-5 ">
+                <div class="card shadow-sm">
+                    <div class="card-title">
+                        <img src="images/logo.PNG" class=" mt-2 rounded mx-auto d-block" alt="Upload Plz">
+                    </div>
+                    <div class="card-body">
+                        <form name="myForm" action="index.html" onsubmit="return validateForm()" method="post">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" name="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Enter email">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with
+                                    anyone else.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" name="password" class="form-control" id="exampleInputPassword1"
+                                    placeholder="Password">
+                            </div>
+
+                            <button type="submit" class="btn btn-primary mt-2">Submit</button>
+                            <p class="text-muted">Need an Account? <a href="signup.html">Sign up</a></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script>
+        function validateForm() {
+            var x = document.forms["myForm"]["email"].value;
+            var y = document.forms["myForm"]["password"].value;
+            if (x == "") {
+                alert("Email must be filled out");
+                return false;
+            } else if (y == "") {
+                alert("Password must be filled out");
+                return false;
+            }
+        }
+    </script>
+
+</body>
+
+</html>
